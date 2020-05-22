@@ -4,7 +4,7 @@
   "description": "Adds a CTA Content-type to tt_content",
   "license": ["MIT"],
   "replace": {
-    "cta": "*"
+    "b13/cta": "*"
   },
   "require": {
   }
