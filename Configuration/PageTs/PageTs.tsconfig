@@ -1,0 +1,13 @@
+mod.wizards.newContentElement {
+    wizardItems {
+        common.elements.cta {
+            title = LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:cewizard.title
+            description = LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:cewizard.description
+            tt_content_defValues.CType = cta
+            iconIdentifier = b13-cta
+        }
+        common.show := addToList(cta)
+    }
+}
+
+mod.web_layout.tt_content.preview.cta = EXT:cta/Resources/Private/Templates/Backend/Preview.html

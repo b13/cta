@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-05-22T13:13:13Z">
+		<header>
+			<description>Language Labels for EXT:cta backend</description>
+			<authorName>David Steeb</authorName>
+			<authorEmail>typo3@b13.com</authorEmail>
+		</header>
+		<body>
+            <trans-unit id="contentelements.title">
+                <source>CTA Element</source>
+                <target>CTA Element</target>
+            </trans-unit>
+            <trans-unit id="cewizard.title">
+                <source>CTA Element</source>
+                <target>CTA Element</target>
+            </trans-unit>
+            <trans-unit id="cewizard.description">
+                <source>Adds a CTA/button element to the page</source>
+                <target>Fügt ein CTA-Element/Button zur Seite hinzu.</target>
+            </trans-unit>
+            <trans-unit id="palettes.b13_linklabel.title">
+                <source>CTA</source>
+                <target>CTA</target>
+            </trans-unit>
+            <trans-unit id="palettes.b13_linklabelconfig.title">
+                <source>CTA</source>
+                <target>CTA und Konfiguration</target>
+            </trans-unit>
+            <trans-unit id="link.formlabel">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="linklabel.formlabel">
+                <source>Link label</source>
+                <target>Link Label/Bezeichnung</target>
+            </trans-unit>
+            <trans-unit id="linkconfig.formlabel">
+                <source>Link Configuration</source>
+                <target>Link Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="backend.link">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="backend.layout">
+                <source>Layout</source>
+                <target>Darstellung</target>
+            </trans-unit>
+            <trans-unit id="backend.title">
+                <source>CTA/Link</source>
+                <target>CTA/Link</target>
+            </trans-unit>
+        </body>
+	</file>
+</xliff>

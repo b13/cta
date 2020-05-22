@@ -1,0 +1,11 @@
+{
+  "name": "b13/cta",
+  "type": "typo3-cms-extension",
+  "description": "Adds a CTA Content-type to tt_content",
+  "license": ["MIT"],
+  "replace": {
+    "cta": "*"
+  },
+  "require": {
+  }
+}
