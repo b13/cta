@@ -4,7 +4,7 @@ mod.wizards.newContentElement {
             title = LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:cewizard.title
             description = LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:cewizard.description
             tt_content_defValues.CType = cta
-            iconIdentifier = b13-cta
+            iconIdentifier = ctype-cta
         }
         common.show := addToList(cta)
     }

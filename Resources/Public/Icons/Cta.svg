@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="-41.7 -758.3 283.5 283.5" enable-background="new -41.7 -758.3 283.5 283.5" xml:space="preserve">
+<rect x="-20.5" y="-728.9" fill="#FFFFFF" width="239.5" height="229.1"/>
+    <path fill="#FFFFFF" d="M-23.2-739.4h247v247h-247V-739.4z"/>
+    <path fill="#FF8700" d="M179.5-579.9H19.7c-4.2,0-7.6-3.4-7.6-7.6v-58.2c0-4.2,3.4-7.6,7.6-7.6h159.8c4.2,0,7.6,3.4,7.6,7.6v58.2
+	C187.1-583.3,183.7-579.9,179.5-579.9z"/>
+    <path fill="#999999" d="M-24-740.6v248h248v-248H-24L-24-740.6z M-6.3-722.9h212.6v212.6H-6.3V-722.9z"/>
+    <polygon fill="#FFFFFF" stroke="#000000" stroke-width="9" stroke-miterlimit="500" points="123.1,-560.2 105.6,-544.5
+	105.6,-615.3 155,-565.6 137.1,-564.3 148,-542.9 136.1,-535 "/>
+</svg>

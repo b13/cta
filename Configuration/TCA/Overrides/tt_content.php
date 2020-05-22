@@ -44,7 +44,7 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
-    ['LLL:EXT:ce_cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'cta', 'b13-cta'],
+    ['LLL:EXT:ce_cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'cta', 'ctype-cta'],
     'textmedia',
     'after'
 );
