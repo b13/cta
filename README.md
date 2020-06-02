@@ -54,7 +54,7 @@ or better yet, use `columnsOverride` configuration in your TCA.
 
 To add options to the dropdown for either one of the dropdown fields, use PageTSConfig like this:
 
-`TCEFORM.tt_content.b13_linkconfig.types.ce_cta.addItems.inverted = Inverted Button`
+`TCEFORM.tt_content.linkconfig.types.ce_cta.addItems.inverted = Inverted Button`
 
 or, again, use `columnsOverrides` in your TCA configuration.
 
