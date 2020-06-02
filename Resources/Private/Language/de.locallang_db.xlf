@@ -19,11 +19,11 @@
                 <source>Adds a CTA/button element to the page</source>
                 <target>Fügt ein CTA-Element/Button zur Seite hinzu.</target>
             </trans-unit>
-            <trans-unit id="palettes.b13_linklabel.title">
+            <trans-unit id="palettes.linklabel.title">
                 <source>CTA</source>
                 <target>CTA</target>
             </trans-unit>
-            <trans-unit id="palettes.b13_linklabelconfig.title">
+            <trans-unit id="palettes.linklabelconfig.title">
                 <source>CTA</source>
                 <target>CTA und Konfiguration</target>
             </trans-unit>
