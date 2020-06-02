@@ -70,6 +70,6 @@ if (!$GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']) {
 $GLOBALS['TCA']['tt_content']['types']['cta'] = [
     'showitem' => $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['begin'] . '
         layout,
-        --palette--;LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.b13_linklabelconfig.title;linklabelconfig,
+        --palette--;LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabelconfig.title;linklabelconfig,
         ' . $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['end']
 ];
