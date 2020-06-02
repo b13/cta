@@ -1,6 +1,5 @@
 <?php
 
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'link' => [
         'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:link.formlabel',
@@ -40,7 +39,6 @@
     ],
 ]);
 
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
@@ -49,17 +47,15 @@
     'after'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'tt_content',
-    'linklabel',
-    'link,linklabel'
-);
+$GLOBALS['TCA']['tt_content']['palettes']['linklabel'] = [
+    'showitem' => 'link,linklabel',
+    'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabel.title'
+];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'tt_content',
-    'linklabelconfig',
-    'link,linklabel,linkconfig'
-);
+$GLOBALS['TCA']['tt_content']['palettes']['linklabelconfig'] = [
+    'showitem' => 'link,linklabel,linkconfig',
+    'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabelconfig.title'
+];
 
 // use the same configuration for visible backend fields as "Textmedia"
 if (!$GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']) {
@@ -70,6 +66,6 @@ if (!$GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']) {
 $GLOBALS['TCA']['tt_content']['types']['cta'] = [
     'showitem' => $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['begin'] . '
         layout,
-        --palette--;LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabelconfig.title;linklabelconfig,
+        --palette--;;linklabelconfig,
         ' . $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['end']
 ];
