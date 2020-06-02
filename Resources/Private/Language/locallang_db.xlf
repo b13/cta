@@ -16,10 +16,10 @@
             <trans-unit id="cewizard.description">
                 <source>Adds a CTA/button element to the page</source>
             </trans-unit>
-            <trans-unit id="palettes.b13_linklabel.title">
+            <trans-unit id="palettes.linklabel.title">
                 <source>CTA</source>
             </trans-unit>
-            <trans-unit id="palettes.b13_linklabelconfig.title">
+            <trans-unit id="palettes.linklabelconfig.title">
                 <source>CTA</source>
             </trans-unit>
             <trans-unit id="link.formlabel">
