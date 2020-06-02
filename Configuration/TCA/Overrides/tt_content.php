@@ -44,7 +44,7 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
-    ['LLL:EXT:ce_cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'cta', 'ctype-cta'],
+    ['LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'cta', 'ctype-cta'],
     'textmedia',
     'after'
 );
@@ -70,6 +70,6 @@ if (!$GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']) {
 $GLOBALS['TCA']['tt_content']['types']['cta'] = [
     'showitem' => $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['begin'] . '
         layout,
-        --palette--;LLL:EXT:ce_cta/Resources/Private/Language/locallang_db.xlf:palettes.b13_linklabelconfig.title;linklabelconfig,
+        --palette--;LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.b13_linklabelconfig.title;linklabelconfig,
         ' . $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['end']
 ];
