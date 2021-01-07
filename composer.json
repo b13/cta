@@ -2,10 +2,12 @@
   "name": "b13/cta",
   "type": "typo3-cms-extension",
   "description": "Adds a CTA Content-type to tt_content",
-  "license": ["MIT"],
+  "license": ["GPL-2.0-or-later"],
   "replace": {
     "b13/cta": "*"
   },
   "require": {
+    "typo3/cms-backend": "^9.5 || ^10.4",
+    "typo3/cms-fluid-styled-content": "^9.5 || ^10.4"
   }
 }
