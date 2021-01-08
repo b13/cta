@@ -7,7 +7,7 @@
     "b13/cta": "*"
   },
   "require": {
-    "typo3/cms-backend": "^9.5 || ^10.4",
-    "typo3/cms-fluid-styled-content": "^9.5 || ^10.4"
+    "typo3/cms-backend": "^9.5 || ^10.4 || ^11.0",
+    "typo3/cms-fluid-styled-content": "^9.5 || ^10.4 || ^11.0"
   }
 }
