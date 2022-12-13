@@ -1,8 +1,8 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'link' => [
+    'tx_cta_link' => [
         'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:link.formlabel',
         'config' => [
             'type' => 'input',
@@ -20,7 +20,7 @@ defined('TYPO3_MODE') or die();
             'softref' => 'typolink'
         ]
     ],
-    'linklabel' => [
+    'tx_cta_linklabel' => [
         'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:linklabel.formlabel',
         'config' => [
             'type' => 'input',
@@ -28,7 +28,7 @@ defined('TYPO3_MODE') or die();
             'max' => '256',
         ]
     ],
-    'linkconfig' => [
+    'tx_cta_linkconfig' => [
         'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:linkconfig.formlabel',
         'config' => [
             'type' => 'select',
@@ -49,12 +49,12 @@ defined('TYPO3_MODE') or die();
 );
 
 $GLOBALS['TCA']['tt_content']['palettes']['linklabel'] = [
-    'showitem' => 'link,linklabel',
+    'showitem' => 'tx_cta_link,tx_cta_linklabel',
     'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabel.title'
 ];
 
 $GLOBALS['TCA']['tt_content']['palettes']['linklabelconfig'] = [
-    'showitem' => 'link,linklabel,linkconfig',
+    'showitem' => 'tx_cta_link,tx_cta_linklabel,tx_cta_linkconfig',
     'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabelconfig.title'
 ];
 

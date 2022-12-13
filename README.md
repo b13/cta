@@ -6,7 +6,7 @@ This extension adds dedicated fields for creating Call-to-action elements and op
 element to your TYPO3 project with a simple Fluid template for frontend rendering.
 It is intended as a basis to add link and cta functionality to your custom content elements like teasers, text elements.
 
-Three fields are being added to table `tt_content`: `link`, `linklabel` and `linkconfig`; `linkconfig` is rendered 
+Three fields are being added to table `tt_content`: `tx_cta_link`, `tx_cta_linklabel` and `tx_cta_linkconfig`; `tx_cta_linkconfig` is rendered 
 as a dropdown by default.
 
 To add CTA fields to other content elements you can make use of two different palettes:
@@ -21,6 +21,14 @@ Use composer to add this content element to your project
 `composer require b13/cta`
 
 and install the extension using the Extension Manager in your TYPO3 backend.
+
+### Update from Version < 2
+
+We have changed the database fields
+
+* link to tx_cta_link
+* linklabel to tx_cta_linklabel
+* linkconfig to tx_cta_linkconfig
 
 ### Use the example cta element
 
@@ -53,7 +61,7 @@ or better yet, use `columnsOverride` configuration in your TCA.
 
 To add options to the dropdown for either one of the dropdown fields, use PageTSConfig like this:
 
-`TCEFORM.tt_content.linkconfig.types.cta.addItems.inverted = Inverted Button`
+`TCEFORM.tt_content.tx_cta_linkconfig.types.cta.addItems.inverted = Inverted Button`
 
 or, again, use `columnsOverrides` in your TCA configuration.
 
