@@ -48,6 +48,8 @@ defined('TYPO3') or die();
     'after'
 );
 
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['cta'] = 'ctype-cta';
+
 $GLOBALS['TCA']['tt_content']['palettes']['linklabel'] = [
     'showitem' => 'tx_cta_link,tx_cta_linklabel',
     'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:palettes.linklabel.title'
