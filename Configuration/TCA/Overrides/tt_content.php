@@ -35,8 +35,7 @@ defined('TYPO3') or die();
             'renderType' => 'selectSingle',
             'items' => [
             ],
-            'default' => '0'
-        ]
+        ],
     ],
 ]);
 
