@@ -39,13 +39,23 @@ defined('TYPO3') or die();
     ],
 ]);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    ['LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'cta', 'ctype-cta'],
-    'textmedia',
-    'after'
-);
+if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class))->getMajorVersion() < 12) {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        ['LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'cta', 'ctype-cta'],
+        'textmedia',
+        'after'
+    );
+} else {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        ['label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'value' => 'cta', 'icon' => 'ctype-cta'],
+        'textmedia',
+        'after'
+    );
+}
 
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['cta'] = 'ctype-cta';
 
