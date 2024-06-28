@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = array (
     'constraints' => [
         'depends' => [
             'fluid_styled_content' => '*',
-            'typo3' => '10.4.0-12.99.99',
+            'typo3' => '10.4.0-13.99.99',
         ]
     ]
 );
