@@ -29,6 +29,9 @@ if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Inform
             'config' => [
                 'type' => 'link',
                 'size' => 30,
+                'appearance' => [
+                    'browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                ],
             ],
         ],
     ]);
@@ -41,7 +44,7 @@ if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Inform
             'type' => 'input',
             'size' => '30',
             'max' => '256',
-        ]
+        ],
     ],
     'tx_cta_linkconfig' => [
         'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:linkconfig.formlabel',
