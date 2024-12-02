@@ -1,0 +1,3 @@
+tt_content.cta =< lib.contentElement
+tt_content.cta.templateName = Cta
+tt_content.cta.templateRootPaths.10 = EXT:cta/Resources/Private/Templates

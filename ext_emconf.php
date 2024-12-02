@@ -4,7 +4,7 @@ $EM_CONF[$_EXTKEY] = array (
     'title' => 'Content type "CTA"',
     'description' => 'Adds a CTA content type to tt_content',
     'category' => 'backend',
-    'version' => '2.0.3',
+    'version' => '2.1.0',
     'state' => 'stable',
     'author' => 'David Steeb, b13 GmbH',
     'author_email' => 'typo3@b13.com',
@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = array (
     'constraints' => [
         'depends' => [
             'fluid_styled_content' => '*',
-            'typo3' => '10.4.0-12.99.99',
+            'typo3' => '10.4.0-13.99.99',
         ]
     ]
 );

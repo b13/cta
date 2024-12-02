@@ -1,11 +1,43 @@
 <?php
 defined('TYPO3') or die();
 
+if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class))->getMajorVersion() < 12) {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+        'tx_cta_link' => [
+            'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:link.formlabel',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputLink',
+                'size' => '30',
+                'max' => '1024',
+                'eval' => 'trim',
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                        ],
+                    ],
+                ],
+                'softref' => 'typolink',
+            ],
+        ],
+    ]);
+} else {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+        'tx_cta_link' => [
+            'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:link.formlabel',
+            'config' => [
+                'type' => 'link',
+                'size' => 30,
+                'appearance' => [
+                    'browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                ],
+            ],
+        ],
+    ]);
+}
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'tx_cta_link' => [
-        'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:link.formlabel',
-        'config' => [],
-    ],
     'tx_cta_linklabel' => [
         'label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:linklabel.formlabel',
         'config' => [
@@ -26,21 +58,6 @@ defined('TYPO3') or die();
 ]);
 
 if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class))->getMajorVersion() < 12) {
-    $GLOBALS['TCA']['tt_content']['columns']['tx_cta_link']['config'] = [
-        'type' => 'input',
-        'renderType' => 'inputLink',
-        'size' => '30',
-        'max' => '1024',
-        'eval' => 'trim',
-        'fieldControl' => [
-            'linkPopup' => [
-                'options' => [
-                    'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-                ],
-            ],
-        ],
-        'softref' => 'typolink'
-    ];
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
@@ -49,13 +66,6 @@ if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Inform
         'after'
     );
 } else {
-    $GLOBALS['TCA']['tt_content']['columns']['tx_cta_link']['config'] = [
-        'type' => 'link',
-        'size' => '30',
-        'appearance' => [
-            'browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-        ],
-    ];
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
