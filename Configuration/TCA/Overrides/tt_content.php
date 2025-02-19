@@ -69,7 +69,7 @@ if ((\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Inform
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
-        ['label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'value' => 'cta', 'icon' => 'ctype-cta'],
+        ['label' => 'LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:contentelements.title', 'value' => 'cta', 'icon' => 'ctype-cta', 'group' => 'default'],
         'textmedia',
         'after'
     );
