@@ -10,10 +10,12 @@ defined('TYPO3') or die();
  */
 
 call_user_func(static function () {
-    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-    $iconRegistry->registerIcon(
-        'ctype-cta',
-        \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        ['source' => 'EXT:cta/Resources/Public/Icons/Cta.svg']
-    );
+    if ((new \TYPO3\CMS\Core\Information\Typo3Version())->getMajorVersion() < 12) {
+        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+        $iconRegistry->registerIcon(
+            'ctype-cta',
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:cta/Resources/Public/Icons/Cta.svg']
+        );
+    }
 });
