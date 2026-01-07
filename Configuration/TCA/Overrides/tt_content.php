@@ -94,7 +94,7 @@ if (!isset($GLOBALS['TCA']['tt_content']['defaultTypeConfiguration'])) {
         'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
         layout,
         --palette--;;linklabelconfig,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,' . $showItemParts[1]
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,' . ($showItemParts[1] ?? '')
     ];
 } else {
     $GLOBALS['TCA']['tt_content']['types']['cta'] = [
