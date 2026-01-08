@@ -1,7 +1,21 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
 <p>
-    <strong><f:translate key="LLL:EXT:cta/Resources/Private/Language/locallang_db.xlf:cewizard.title" /></strong><br>
-    {f:if(condition: tx_cta_linklabel, then: tx_cta_linklabel, else: 'Link')}: {tx_cta_link}
-    <f:if condition="{tx_cta_linkconfig}">
-        <br><i>Layout: {tx_cta_linkconfig}</i>
+    <f:if condition="{record}">
+        <f:then>
+            <f:render section="cta" arguments="{link: record.tx_cta_link.url, linklabel: record.tx_cta_linklabel, linkconfig: record.tx_cta_linkconfig}" />
+        </f:then>
+        <f:else>
+            <f:render section="cta" arguments="{link: tx_cta_link, linklabel: tx_cta_linklabel, linkconfig: tx_cta_linkconfig}" />
+        </f:else>
     </f:if>
+
 </p>
+<f:section name="cta">
+    {f:if(condition: linklabel, then: linklabel, else: 'Link')}: {link}
+    <f:if condition="{linkconfig}">
+        <br><i>Layout: {linkconfig}</i>
+    </f:if>
+</f:section>
