@@ -32,7 +32,9 @@ We have changed the database fields
 
 ### Use the example cta element
 
-If you want to make use of the basic cta element included as an example, add the TypoScript setup to your site-Extension
+If you want to make use of the basic cta element included as an example, add the site set to your site configuration
+
+For TYPO3 Version < 13, add the TypoScript setup to your site-Extension
 setup:
 
 `@import 'EXT:cta/Configuration/TypoScript/setup.typoscript'`
