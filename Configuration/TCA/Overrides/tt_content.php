@@ -88,7 +88,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['linklabelconfig'] = [
 ];
 
 // use the same configuration for visible backend fields as "Textmedia"
-if (!isset($GLOBALS['TCA']['tt_content']['defaultTypeConfiguration'])) {
+if (!isset($GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['begin'])) {
     $showItemParts = explode('--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,', $GLOBALS['TCA']['tt_content']['types']['textmedia']['showitem']);
     $GLOBALS['TCA']['tt_content']['types']['cta'] = [
         'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
