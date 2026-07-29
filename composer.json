@@ -5,7 +5,8 @@
   "license": ["GPL-2.0-or-later"],
   "extra": {
     "typo3/cms": {
-      "extension-key": "cta"
+      "extension-key": "cta",
+      "version": "2.2.1"
     }
   },
   "require": {
